@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+
+<ul class="game_tables">
+  <li *ngFor="let game_table of game_tables">
+    [{{game_table.id}}] {{game_table.doc.name}} | {{game_table.doc.blind_small}}/{{game_table.doc.blind_big}} | ({{game_table.doc.players}})
+  </li>
+</ul>

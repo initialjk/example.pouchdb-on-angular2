@@ -14,18 +14,13 @@
 <body>
   <pouchdb-app>Loading...</pouchdb-app>
 
-  
+  <script src="//cdn.jsdelivr.net/pouchdb/5.3.2/pouchdb.min.js"></script>
 
-    {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
-    <script>
-      System.import('system-config.js').then(function () {
-        System.import('main');
-      }).catch(console.error.bind(console));
-    </script>
-
-  
-
-
-
+  {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
+  <script>
+    System.import('system-config.js').then(function () {
+      System.import('main');
+    }).catch(console.error.bind(console));
+  </script>
 </body>
 </html>
